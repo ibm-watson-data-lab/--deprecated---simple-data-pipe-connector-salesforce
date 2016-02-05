@@ -21,7 +21,7 @@
     "lodash": "^3.10.1",
     "node-schedule": "~0.2.9",
     "request": "^2.67.0",
-    "simple-data-pipe-sdk": "git://github.com/ibm-cds-labs/simple-data-pipe-sdk.git",
+    "simple-data-pipe-sdk": "^0.2.0",
     "when": "~3.7.3"
   },
   "author": "david_taieb@us.ibm.com",
