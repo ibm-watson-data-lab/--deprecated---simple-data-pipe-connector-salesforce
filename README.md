@@ -10,15 +10,15 @@ Need to load data from other sources? Check out the [connector repository](https
 
 ##### General
 
-To load data from Salesforce you need to have an account with Admin permissions. For details on how to configure the Simple Data Pipe application in the Salesforce web console, refer to the (tutorial)[https://developer.ibm.com/clouddataservices/simple-data-pipe-salesforce-looker/).
+To load data from Salesforce you need to have an account with Admin permissions. For details on how to configure the Simple Data Pipe application in the Salesforce web console, refer to the [tutorial](https://developer.ibm.com/clouddataservices/simple-data-pipe-salesforce-looker/).
 
 ##### Deploy the Simple Data Pipe
 
   [Deploy the Simple Data Pipe in Bluemix](https://github.com/ibm-cds-labs/simple-data-pipe) using the Deploy to Bluemix button or manually.
 
-##### Install the Stripe.com connector
+##### Install the Salesforce.com connector
 
-  Install the connector using [these instructions](https://github.com/ibm-cds-labs/simple-data-pipe/wiki/Installing-a-Simple-Data-Pipe-Connector) into the Simple Data Pipe.  
+ This connector is installed by default in the Simple Data Pipe application.  
 
 ### Using the salesforce.com Connector 
 
