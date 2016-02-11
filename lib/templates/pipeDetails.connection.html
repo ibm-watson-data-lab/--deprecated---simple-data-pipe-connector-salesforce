@@ -46,12 +46,12 @@
     <form name="pipeConnectionForm" class="form_standard" novalidate>
       <div class="form_field" ng-class="{'has-error':!pipeConnectionForm.clientId.$pristine && pipeConnectionForm.clientId.$invalid}">
         <label for="clientId" class="form_label">Consumer key</label>
-        <input type="text" class="input_text" name="clientId" id="clientId" required ng-model="selectedPipe.clientId" placeholder="{{selectedConnector.label}} consumer key {{!pipeConnectionForm.clientId.$pristine && pipeConnectionForm.clientId.$invalid ? 'is required' : ''}}">
+        <input type="text" class="input_text input_wide" name="clientId" id="clientId" required ng-model="selectedPipe.clientId" placeholder="{{selectedConnector.label}} consumer key {{!pipeConnectionForm.clientId.$pristine && pipeConnectionForm.clientId.$invalid ? 'is required' : ''}}">
       </div>
 
       <div class="form_field" ng-class="{'has-error':!pipeConnectionForm.clientSecret.$pristine && pipeConnectionForm.clientSecret.$invalid}">
         <label for="clientSecret" class="form_label">Consumer secret</label>
-        <input type="text" class="input_text" name="clientSecret" id="clientSecret" required ng-model="selectedPipe.clientSecret" placeholder="{{selectedConnector.label}} consumer secret {{!pipeConnectionForm.clientSecret.$pristine && pipeConnectionForm.clientSecret.$invalid ? 'is required' : ''}}">
+        <input type="text" class="input_text input_wide" name="clientSecret" id="clientSecret" required ng-model="selectedPipe.clientSecret" placeholder="{{selectedConnector.label}} consumer secret {{!pipeConnectionForm.clientSecret.$pristine && pipeConnectionForm.clientSecret.$invalid ? 'is required' : ''}}">
       </div>
 
       <div class="form_field type_copy">
