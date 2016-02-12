@@ -11,8 +11,8 @@
 
 <section class="layout_section">
 
-<p class="type_copy" ng-show="selectedPipe.tables && selectedPipe.tables.length > 0" class="alert-container bg_white">
-  <span class="glyphicon glyphicon-ok"></span> <strong>You're connected!</strong> If your OAuth token has expired, <a data-toggle="collapse" data-target="#connect-form">refresh it</a>.
+<p class="alert-container warning" ng-show="selectedPipe.tables && selectedPipe.tables.length > 0">
+  <span class="glyphicon glyphicon-ok"></span> <strong>You're connected!</strong> If your OAuth token has expired, <a class="type_link" ng-click="toggle('connect-form')">refresh it</a>.
 </p>
   
 <div id="connect-form" ng-class="{collapse: selectedPipe.tables && selectedPipe.tables.length > 0}">
@@ -25,10 +25,11 @@
     <h2 class="type_subhead">
       <mark class="type_mark">Add your OAuth callback to {{selectedConnector.label}}</mark>
     </h2>
+    
     <p class="type_copy">
       Copy and paste this callback URL into your {{selectedConnector.label}} app.
     </p>
-    <p class="type_copy">
+    <p class="type_copy form_container">
       Callback URL: <strong>{{oauthCallback}}</strong>
     </p>
 
@@ -43,6 +44,7 @@
       <span class="glyphicon glyphicon-warning"></span> If you've just added Simple Data Pipe to {{selectedConnector.label}}, you need to wait ~10 minutes before you can connect.
     </p>
 
+    <div class="form_container">
     <form name="pipeConnectionForm" class="form_standard" novalidate>
       <div class="form_field" ng-class="{'has-error':!pipeConnectionForm.clientId.$pristine && pipeConnectionForm.clientId.$invalid}">
         <label for="clientId" class="form_label">Consumer key</label>
@@ -69,6 +71,7 @@
         <p class="type_copy" ng-if="connectingpipe">Redirecting to {{selectedConnector.label}}.com. Please wait...</p>
       </div>
     </form>
+    </div>
 
 </div>
 <!-- 
