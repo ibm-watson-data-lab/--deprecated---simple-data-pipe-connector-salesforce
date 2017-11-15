@@ -1,5 +1,7 @@
 # Simple Data Pipe Connector for Salesforce
 
+:no_entry_sign: This project is no longer maintained
+
 ##### [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for [salesforce.com](http://www.salesforce.com)
 
 This connector uses [the salesforce REST API](https://developer.salesforce.com/page/REST_API) to fetch information and the [Simple Data Pipe SDK](https://github.com/ibm-cds-labs/simple-data-pipe-sdk) to store it in Cloudant. No data enrichment is performed.
